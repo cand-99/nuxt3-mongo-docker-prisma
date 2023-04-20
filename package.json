@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --trace-warnings",
+    "start": "node .output/server/index.mjs",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0",
+    "@types/bcrypt": "^5.0.0",
+    "@types/uuid": "^9.0.1"
+  },
+  "dependencies": {
+    "prisma": "^4.12.0",
+    "bcrypt": "^5.1.0",
+    "@prisma/client": "^4.12.0",
+    "uuid": "^9.0.0"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.mjs"
+  }
+}
